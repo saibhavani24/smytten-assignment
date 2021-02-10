@@ -1,18 +1,18 @@
 .signle-product {
-    padding: 40px;
-    height: 96%;
-    border: 1px solid #afdfd9;
+	padding: 40px;
+	height: 96%;
+	border: 1px solid #afdfd9;
 }
 .product-img{
-    img{
-        width: 100%;
-        height: 100%;
-        align-items: center;
-    }
+	img{
+		width: 100%;
+		height: 100%;
+		align-items: center;
+	}
 }
 @media only screen and (max-width:1024px) {
-    .signle-product {
-        padding: 40px;
-        border: 1px solid #afdfd9;
-    }
+	.signle-product {
+		padding: 40px;
+		border: 1px solid #afdfd9;
+	}
 }

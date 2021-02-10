@@ -1,18 +1,16 @@
 <!-- PC header -->
-<!-- <div class='row m-hide'> -->
-  <!-- <div class='col p-0'> -->
-    <div class='container-fluid navbar-expand-lg m-hide'>
-      <div id='navbarNav'>
-        <div class="row">
-          <div class="col-6 nav-button"  [routerLink]='["/"]'>
-            <p class='nav-link'>ITEM </p>
-          </div>
-          <div class="col-6 nav-button"  [routerLink]='["/store-search"]'>
-            <p class='nav-link'>STORE</p>
-          </div>
-        </div>
+<div class='container-fluid navbar-expand-lg m-hide'>
+  <div id='navbarNav'>
+    <div class="row">
+      <div class="col-6 nav-button" [routerLink]='["/"]'>
+        <p class='nav-link'>ITEM </p>
+      </div>
+      <div class="col-6 nav-button" [routerLink]='["/store-search"]'>
+        <p class='nav-link'>STORE</p>
       </div>
     </div>
+  </div>
+</div>
 <!-- mobile header -->
 <div class='header-box d-none p-0 m-show'>
   <div class='container-fluid d-none p-0 m-show'>
@@ -28,7 +26,7 @@
               </a>
             </div>
             <div id="sidenav-close" (click)="closeNav()">
-          </div>
+            </div>
           </div>
         </header>
         <!-- mobile side menu -->
@@ -48,7 +46,7 @@
         </div>
         <div class='row text-center'>
           <div class='col-6 text-center'>
-            <p  class='mobile-tab' [routerLink]='["/"]'>ITEM</p>
+            <p class='mobile-tab' [routerLink]='["/"]'>ITEM</p>
           </div>
           <div class='col-6 text-center'>
             <p class='mobile-tab' [routerLink]='["/store-search"]'>STORE</p>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class CommonComponent implements OnInit {
   swipeCoord?: [number, number];
   swipeTime?: number;
-  constructor( ) { }
+  constructor() { }
   ngOnInit() {
   }
   swipeRightToLeft(e: TouchEvent, when: string) {
