@@ -1,0 +1,19 @@
+<div class='main-section'>
+	<div class='row'>
+		<div class='col-xl-4 col-sm-6' *ngFor='let product of products'>
+			<div class='signle-product'>
+				<div class='product-img'>
+					<img [src]='product.image_url' class='position-relative' alt=''>
+				</div>
+				<div class='product-details'>
+					<div class='product-name'>
+						<p>{{product.name}}</p>
+					</div>
+					<div class='w-65'>
+						Price: {{product.price}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

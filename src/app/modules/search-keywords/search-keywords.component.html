@@ -1,0 +1,35 @@
+<div class='search-wrap'>
+  <div class='navbar-nav-scroll'>
+    <ul class='navbar-nav bd-navbar-nav flex-row'>
+      <li class='nav-item ml-4'>
+        <div class='d-flex w-100 header-seach align-self-end'>
+          <div class='input-close'>
+            <input type='text' class='input-search' [(ngModel)]='searchText' (ngModelChange)='filterStore($event)'
+              placeholder='Enter store name'>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class='row store-margin' *ngFor='let store of storeList'>
+  <div>
+    <div class='brand-set'>
+      <div class='list-of-stores'>
+        <h5><b>{{store.key}}</b></h5>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-xl-3 col-sm-4' *ngFor='let store of store.stores'>
+      <div class='store-list-display'>
+        <div class='desc-store-list-box'>
+          <div>
+            <img [src]='store.icon' class='img-fluid' alt=''>
+            <p class="text-center">{{store.name}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

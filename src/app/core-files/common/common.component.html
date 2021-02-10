@@ -1,0 +1,63 @@
+<!-- PC header -->
+<!-- <div class='row m-hide'> -->
+  <!-- <div class='col p-0'> -->
+    <div class='container-fluid navbar-expand-lg m-hide'>
+      <div id='navbarNav'>
+        <div class="row">
+          <div class="col-6 nav-button"  [routerLink]='["/"]'>
+            <p class='nav-link'>ITEM </p>
+          </div>
+          <div class="col-6 nav-button"  [routerLink]='["/store-search"]'>
+            <p class='nav-link'>STORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- mobile header -->
+<div class='header-box d-none p-0 m-show'>
+  <div class='container-fluid d-none p-0 m-show'>
+    <div class='row m-0' id='navbar'>
+      <div class='col p-0' id='mobile-navbar'>
+        <header class='nav-bg m-main-header'>
+          <div class='mobile-side-nav d-flex w-100 m-header-set'>
+            <div class='menu-bar d-flex'>
+              <a href='javascript:void(0)' class='bar-toggle' (click)='openNav();'>
+                <div class='side-menu'></div>
+                <div class='side-menu'></div>
+                <div class='side-menu'></div>
+              </a>
+            </div>
+            <div id="sidenav-close" (click)="closeNav()">
+          </div>
+          </div>
+        </header>
+        <!-- mobile side menu -->
+        <div (touchstart)="swipeRightToLeft($event, 'start')" (touchend)="swipeRightToLeft($event, 'end')">
+          <div id='mobileSidenav' class='sidenav'>
+            <div class='mobile-menu-main'>
+              <h4 class='mobile-menu'>Menu</h4>
+            </div>
+            <div class='single-link-menu'>
+              <ul class='m-0'>
+                <li> User</li>
+                <li> Order</li>
+                <li class='active' [routerLink]='["/"]' (click)="closeNav()"> PRODUCT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='row text-center'>
+          <div class='col-6 text-center'>
+            <p  class='mobile-tab' [routerLink]='["/"]'>ITEM</p>
+          </div>
+          <div class='col-6 text-center'>
+            <p class='mobile-tab' [routerLink]='["/store-search"]'>STORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id='outlet'>
+  <router-outlet></router-outlet>
+</div>

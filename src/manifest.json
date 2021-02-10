@@ -1,0 +1,9 @@
+{
+  "short_name": "Smytten",
+  "name": "Smytten",
+  "start_url": "/",
+  "theme_color": "#2e0e69",
+  "background_color": "#fff",
+  "display": "standalone",
+  "orientation": "portrait"
+}
