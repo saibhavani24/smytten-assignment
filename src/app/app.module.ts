@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule,HttpClientJsonpModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 @NgModule({
@@ -8,8 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    HttpClientJsonpModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

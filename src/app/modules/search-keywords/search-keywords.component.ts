@@ -1,8 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from '../../core-files/services/store.service'
-import { FilterBrandsPipe } from '../../core-files/pipes/filter-brands.pipe';
-
+import { FilterStorePipe } from '../../core-files/pipes/filter-store.pipe';
 @Component({
   selector: 'app-search-keywords',
   templateUrl: './search-keywords.component.html',
@@ -33,8 +32,8 @@ export class SearchKeywordsComponent implements OnInit {
   }
   filterStore(value) {
     this.searchText = value;
-    const filteredbrands = new FilterBrandsPipe().transform(this.storeData, this.searchText);
-    const sorted = filteredbrands.sort((a, b) => a.name > b.name ? 1 : -1);
+    const filteredStoress = new FilterStorePipe().transform(this.storeData, this.searchText);
+    const sorted = filteredStoress.sort((a, b) => a.name > b.name ? 1 : -1);
     const grouped = sorted.reduce((groups, storeArray) => {
       const letter = storeArray.name.charAt(0).toLowerCase();
       groups[letter] = groups[letter] || [];
